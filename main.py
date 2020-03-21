@@ -72,7 +72,6 @@ def get_geotagging(exif):
 
 exif = get_exif(finalDir[1])
 
-print(get_labeled_exif(exif).get('DateTimeDigitized'))
 
 csvFile = []
 csvFirstRow = ['FileName','DateTime','Lat','Long']
@@ -80,7 +79,8 @@ csvFile.append(csvFirstRow)
 
 for singleDir in finalDir:
     eachRow = []
-    eachRow.append('FileName')
+    fileName = singleDir.rsplit('/', 1)
+    eachRow.append(fileName[1])
     exif = get_exif(singleDir)
     geotags = get_geotagging(exif)
     coord = get_coordinates(geotags)
