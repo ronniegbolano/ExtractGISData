@@ -1,0 +1,15 @@
+You need all the following requirements to build this project.
+
+All the reqs from these particular importants.
+
+
+from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
+
+from tkinter.filedialog import askdirectory
+from os import walk
+import csv
+
+Python 3.6 and above.
+
+And as a user, please remember to choose directories that ONLY have jpeg files, or else this program may crash. 
