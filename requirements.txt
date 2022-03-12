@@ -6,7 +6,7 @@ gpsphoto==2.2.3
 image==1.5.28
 load==2019.4.13
 piexif==1.1.3
-Pillow==7.0.0
+Pillow==9.0.1
 public==2019.4.13
 pytz==2019.3
 sqlparse==0.3.1
